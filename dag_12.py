@@ -13,7 +13,7 @@ def collatz(number: int) -> int:
         if number % 2:
             number = number * 3 + 1  # odd
         else:
-            number /= 2  # even
+            number //= 2  # even
         count += 1
     return count
 
