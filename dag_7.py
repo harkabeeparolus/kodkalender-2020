@@ -5,7 +5,7 @@
 
 from itertools import chain, cycle
 
-from dag_7_input import talföljd
+from input_files.dag_7_input import talföljd
 
 
 def alternating_signs(seq):

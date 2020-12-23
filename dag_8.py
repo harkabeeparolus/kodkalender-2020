@@ -5,7 +5,7 @@
 
 import string
 
-from dag_8_input import krypterad_önskelista
+from input_files.dag_8_input import krypterad_önskelista
 
 
 def rotate_right(seq: str, amount: int) -> str:

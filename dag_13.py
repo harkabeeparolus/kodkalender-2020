@@ -3,7 +3,7 @@
 """Unga programmerare kodkalender 2020, lucka 13"""
 # https://ungaprogrammerare.se/kodkalender/lucka-13/
 
-from dag_13_input import tallista
+from input_files.dag_13_input import tallista
 
 
 def number_ok(number: int) -> bool:

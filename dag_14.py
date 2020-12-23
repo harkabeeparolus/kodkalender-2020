@@ -5,7 +5,7 @@
 
 from itertools import combinations
 
-from dag_14_input import artikelnummer
+from input_files.dag_14_input import artikelnummer
 
 numbers = (str(num) for num in artikelnummer)
 anagrams = [(i, j) for i, j in combinations(numbers, 2) if sorted(i) == sorted(j)]

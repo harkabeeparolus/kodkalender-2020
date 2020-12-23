@@ -3,7 +3,7 @@
 """Unga programmerare kodkalender 2020, lucka 9"""
 # https://ungaprogrammerare.se/kodkalender/lucka-9/
 
-from dag_9_input import lista
+from input_files.dag_9_input import lista
 
 
 def cookies_at_pos(pos):

@@ -5,7 +5,7 @@
 
 import re
 
-from dag_6_input import önskelista
+from input_files.dag_6_input import önskelista
 
 SV_VOWELS = "aouåeiyäö"
 FORBIDDEN_LETTERS = "cywh"

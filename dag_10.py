@@ -3,7 +3,7 @@
 """Unga programmerare kodkalender 2020, lucka 10"""
 # https://ungaprogrammerare.se/kodkalender/lucka-10/
 
-from dag_10_input import hacker_lista
+from input_files.dag_10_input import hacker_lista
 
 
 def first_plus_last(num: int) -> int:

@@ -3,7 +3,7 @@
 """Unga programmerare kodkalender 2020, lucka 4"""
 # https://ungaprogrammerare.se/kodkalender/lucka-4/
 
-from dag_4_input import postnr
+from input_files.dag_4_input import postnr
 
 postnr.sort()
 

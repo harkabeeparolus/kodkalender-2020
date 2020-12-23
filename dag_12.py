@@ -3,7 +3,7 @@
 """Unga programmerare kodkalender 2020, lucka 12"""
 # https://ungaprogrammerare.se/kodkalender/lucka-12/
 
-from dag_12_input import tallista
+from input_files.dag_12_input import tallista
 
 
 def collatz(number: int) -> int:
