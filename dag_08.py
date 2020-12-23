@@ -17,10 +17,10 @@ def decrypt(seq):
     "Decrypt a sequence of strings."
 
     sv_alfabet = string.ascii_lowercase + "åäö"
-    key = dict(zip(sv_alfabet, rotate_right(sv_alfabet, 13)))
+    key = str.maketrans(sv_alfabet, rotate_right(sv_alfabet, 13))
 
     for crypt_phrase in seq:
-        yield "".join(key[letter.lower()] for letter in crypt_phrase)
+        yield crypt_phrase.translate(key)
 
 
 for wish in decrypt(krypterad_önskelista):
