@@ -7,6 +7,7 @@ from input_files.dag_9_input import lista
 
 
 def cookies_at_pos(pos):
+    "Count the sum of cookies in the neighbors houses"
     left = lista[pos - 1] if pos > 0 else 0
     right = lista[pos + 1] if pos + 1 < len(lista) else 0
     return left + right

@@ -5,7 +5,12 @@
 
 from input_files.dag_11_input import postnummer_lista
 
-postcode_is_ok = lambda i: "8" in str(i) and "1" not in str(i)
+
+def postcode_is_ok(i: int) -> bool:
+    "Validate a postcode"
+    return "8" in str(i) and "1" not in str(i)
+
+
 valid_postcodes = [n for n in postnummer_lista if postcode_is_ok(n)]
 
 print(f"Antal postnummer: {len(valid_postcodes)}")
