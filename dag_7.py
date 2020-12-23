@@ -4,12 +4,11 @@
 # https://ungaprogrammerare.se/kodkalender/lucka-7/
 
 from itertools import chain, cycle
-from typing import Iterable
 
 from dag_7_input import talföljd
 
 
-def alternating_signs(seq: Iterable[float]) -> Iterable[float]:
+def alternating_signs(seq):
     """Given a sequence of numbers, return a new sequence with alternating
     positive and negative signs.
     """
