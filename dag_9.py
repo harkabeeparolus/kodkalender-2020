@@ -5,17 +5,15 @@
 
 from dag_9_input import lista
 
-length = len(lista)
-top_cookies = 0
-top_pos = None
 
-for i in range(length):
-    left = lista[i - 1] if i > 0 else 0
-    right = lista[i + 1] if i + 1 < length else 0
-    cookies = left + right
-    if cookies > top_cookies:
-        top_cookies = cookies
-        top_pos = i
+def cookies_at_pos(pos):
+    left = lista[pos - 1] if pos > 0 else 0
+    right = lista[pos + 1] if pos + 1 < len(lista) else 0
+    return left + right
+
+
+top_pos = max(range(len(lista)), key=cookies_at_pos)
+top_cookies = cookies_at_pos(top_pos)
 
 print(f"Position {top_pos}: {top_cookies} kakor")
 # Position 185: 333 kakor
