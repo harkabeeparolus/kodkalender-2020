@@ -10,9 +10,8 @@ movement = {"w": -1j, "a": -1, "s": 1j, "d": 1}  # complex numbers
 pos = sum(movement[key] for key in instruktioner)
 
 x, y = int(pos.real), int(pos.imag)
-x_dir = "österut" if x > 0 else "västerut"
-y_dir = "norrut" if y < 0 else "söderut"
-x, y = abs(x), abs(y)
+x_dir = "västerut" if x < 0 else "österut"
+y_dir = "söderut" if y > 0 else "norrut"
 
-print(f"Position: {x} snäpp {x_dir}, {y}, snäpp {y_dir}")
+print(f"Position: {abs(x)} snäpp {x_dir}, {abs(y)} snäpp {y_dir}")
 # Position: 2 snäpp västerut, 9, snäpp norrut
