@@ -3,23 +3,13 @@
 """Unga programmerare kodkalender 2020, lucka 7"""
 # https://ungaprogrammerare.se/kodkalender/lucka-7/
 
-from itertools import chain, cycle
+import itertools as it
 
 from input_files.dag_7_input import talföljd
 
-
-def alternating_signs(seq):
-    """Given a sequence of numbers, return a new sequence with alternating
-    positive and negative signs.
-    """
-
-    signs = chain([1], cycle([1, -1]))
-
-    for number, sign in zip(seq, signs):
-        yield number * sign
-
-
-password = sum(alternating_signs(int(x) for x in str(talföljd)))
+numbers = (int(digit) for digit in str(talföljd))
+signs = it.chain([1], it.cycle([1, -1]))
+password = sum(x * sign for x, sign in zip(numbers, signs))
 
 print(f"Lösenord: {password}")
 # Lösenord: 34
