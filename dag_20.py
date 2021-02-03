@@ -14,4 +14,4 @@ x_dir = "västerut" if x < 0 else "österut"
 y_dir = "söderut" if y > 0 else "norrut"
 
 print(f"Position: {abs(x)} snäpp {x_dir}, {abs(y)} snäpp {y_dir}")
-# Position: 2 snäpp västerut, 9, snäpp norrut
+# Position: 2 snäpp västerut, 9 snäpp norrut
