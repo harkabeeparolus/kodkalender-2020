@@ -22,7 +22,7 @@ def number_ok(number: int) -> bool:
     num_str = str(number)
     assert len(num_str) >= 2
     pairs = [map(int, pair) for pair in pairwise(num_str)]
-    return all(a == b or a < b for a, b in pairs)
+    return all(a <= b for a, b in pairs)
 
 
 valid_numbers = [n for n in tallista if number_ok(n)]
