@@ -23,15 +23,19 @@ def is_rainbow_number(number: int) -> bool:
 
     num_str = str(number)
 
-    palindrome = num_str == num_str[::-1]
+    # Is it a palindrome?
+    is_palindrome = num_str == num_str[::-1]
+
+    # Does it start and end with 1?
     has_ones = num_str[0] == num_str[-1] == "1"
 
+    # See if first half of the number is in increasing sequence
     half_length = len(num_str) // 2
     half = num_str[:-half_length]
     pairs = [map(int, pair) for pair in pairwise(half)]
     in_sequence = all(0 <= (b - a) <= 1 for a, b in pairs)
 
-    return palindrome and has_ones and in_sequence
+    return is_palindrome and has_ones and in_sequence
 
 
 non_rainbows = [n for n in lista if not is_rainbow_number(n)]

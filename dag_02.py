@@ -6,7 +6,7 @@
 from input_files.dag_2_input import lista
 
 buttons = {"u": 1, "n": -1}
-floor = sum(buttons[x] for x in lista)
+floor_number = sum(buttons[x] for x in lista)
 
-print(f"Våning: {floor}")
+print(f"Våning: {floor_number}")
 # Våning: 29

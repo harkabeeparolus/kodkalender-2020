@@ -19,7 +19,8 @@ def grouper(iterable, n, fillvalue=None):
 GOOD_ENTRY = frozenset("IP")
 
 for team, log_entry in enumerate(kontrollbok):
-    if any(set(pair) != GOOD_ENTRY for pair in grouper(log_entry, 2)):
+    pairs = grouper(log_entry, 2)
+    if any(set(pair) != GOOD_ENTRY for pair in pairs):
         print(f"Fel hos lag {team}: {log_entry}")
 
 # Fel hos lag 73: IPPIIPIIPIPIIPPIIPIPPIIPIPIPIP

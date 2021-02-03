@@ -7,7 +7,7 @@ from input_files.dag_20_input import instruktioner
 
 movement = {"w": -1j, "a": -1, "s": 1j, "d": 1}  # complex numbers
 
-pos = sum(movement[key] for key in instruktioner)
+pos = sum(movement[keypress] for keypress in instruktioner)
 
 x, y = int(pos.real), int(pos.imag)
 x_dir = "västerut" if x < 0 else "österut"

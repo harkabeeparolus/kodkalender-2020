@@ -14,13 +14,11 @@ TWO_IN_A_ROW = re.compile(r"(.)\1")
 
 def wish_ok(wish: str) -> bool:
     """See if all conditions are approved for a single wish."""
+    one_vowel = any(letter in SV_VOWELS for letter in wish)
+    two_letters = TWO_IN_A_ROW.search(wish)
+    no_forbidden = not any(letter in FORBIDDEN_LETTERS for letter in wish)
 
-    conditions = (
-        any(letter in SV_VOWELS for letter in wish),
-        not any(letter in FORBIDDEN_LETTERS for letter in wish),
-        TWO_IN_A_ROW.search(wish),
-    )
-    return all(conditions)
+    return one_vowel and two_letters and no_forbidden
 
 
 approved = [wish for wish in önskelista if wish_ok(wish)]
