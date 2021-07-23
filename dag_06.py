@@ -16,7 +16,7 @@ def wish_ok(wish: str) -> bool:
     """See if all conditions are approved for a single wish."""
     one_vowel = any(letter in SV_VOWELS for letter in wish)
     two_letters = TWO_IN_A_ROW.search(wish) or False
-    no_forbidden = not any(letter in FORBIDDEN_LETTERS for letter in wish)
+    no_forbidden = all(letter not in FORBIDDEN_LETTERS for letter in wish)
 
     return one_vowel and two_letters and no_forbidden
 
