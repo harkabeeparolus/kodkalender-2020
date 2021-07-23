@@ -1,6 +1,6 @@
 #! /usr/bin/env python3
 
-"""Unga programmerare kodkalender 2020, lucka 14"""
+"""Unga programmerare kodkalender 2020, lucka 14."""
 # https://ungaprogrammerare.se/kodkalender/lucka-14/
 
 from itertools import combinations

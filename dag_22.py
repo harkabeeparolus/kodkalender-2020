@@ -1,6 +1,6 @@
 #! /usr/bin/env python3
 
-"""Unga programmerare kodkalender 2020, lucka 22"""
+"""Unga programmerare kodkalender 2020, lucka 22."""
 # https://ungaprogrammerare.se/kodkalender/lucka-22/
 
 from input_files.dag_22_input import diktlista

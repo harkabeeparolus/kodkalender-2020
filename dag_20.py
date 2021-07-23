@@ -1,6 +1,6 @@
 #! /usr/bin/env python3
 
-"""Unga programmerare kodkalender 2020, lucka 20"""
+"""Unga programmerare kodkalender 2020, lucka 20."""
 # https://ungaprogrammerare.se/kodkalender/lucka-20/
 
 from input_files.dag_20_input import instruktioner

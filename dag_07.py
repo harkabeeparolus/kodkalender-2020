@@ -1,6 +1,6 @@
 #! /usr/bin/env python3
 
-"""Unga programmerare kodkalender 2020, lucka 7"""
+"""Unga programmerare kodkalender 2020, lucka 7."""
 # https://ungaprogrammerare.se/kodkalender/lucka-7/
 
 import itertools as it

@@ -1,6 +1,6 @@
 #! /usr/bin/env python3
 
-"""Unga programmerare kodkalender 2020, lucka 19"""
+"""Unga programmerare kodkalender 2020, lucka 19."""
 # https://ungaprogrammerare.se/kodkalender/lucka-19/
 
 from input_files.dag_19_input import tallista

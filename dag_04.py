@@ -1,6 +1,6 @@
 #! /usr/bin/env python3
 
-"""Unga programmerare kodkalender 2020, lucka 4"""
+"""Unga programmerare kodkalender 2020, lucka 4."""
 # https://ungaprogrammerare.se/kodkalender/lucka-4/
 
 from input_files.dag_4_input import postnr

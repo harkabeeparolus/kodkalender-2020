@@ -1,13 +1,13 @@
 #! /usr/bin/env python3
 
-"""Unga programmerare kodkalender 2020, lucka 12"""
+"""Unga programmerare kodkalender 2020, lucka 12."""
 # https://ungaprogrammerare.se/kodkalender/lucka-12/
 
 from input_files.dag_12_input import tallista
 
 
 def collatz(number: int) -> int:
-    "Collatz Problem"
+    """Collatz Problem."""
     count = 0
     while number > 1:
         if number % 2:

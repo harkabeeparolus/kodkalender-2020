@@ -1,6 +1,6 @@
 #! /usr/bin/env python3
 
-"""Unga programmerare kodkalender 2020, lucka 21"""
+"""Unga programmerare kodkalender 2020, lucka 21."""
 # https://ungaprogrammerare.se/kodkalender/lucka-21/
 
 import itertools
@@ -9,7 +9,7 @@ from input_files.dag_21_input import lista
 
 
 def pairwise(iterable):
-    "Collect data into pairs"
+    """Collect data into pairs."""
     # s -> (s0,s1), (s1,s2), (s2, s3), ...
     # https://docs.python.org/3/library/itertools.html#itertools-recipes
     a, b = itertools.tee(iterable)
@@ -18,9 +18,11 @@ def pairwise(iterable):
 
 
 def is_rainbow_number(number: int) -> bool:
-    """Rainbow number is a palindrome, starts and ends with 1, and numbers
-    increase in sequence by 0 or 1."""
+    """Test if number is a Rainbow number.
 
+    Rainbow number is a palindrome, starts and ends with 1, and numbers
+    increase in sequence by 0 or 1.
+    """
     num_str = str(number)
 
     # Is it a palindrome?

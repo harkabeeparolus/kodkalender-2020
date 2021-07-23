@@ -1,13 +1,13 @@
 #! /usr/bin/env python3
 
-"""Unga programmerare kodkalender 2020, lucka 11"""
+"""Unga programmerare kodkalender 2020, lucka 11."""
 # https://ungaprogrammerare.se/kodkalender/lucka-11/
 
 from input_files.dag_11_input import postnummer_lista
 
 
 def postcode_is_ok(i: int) -> bool:
-    "Validate a postcode"
+    """Validate a postcode."""
     return "8" in str(i) and "1" not in str(i)
 
 

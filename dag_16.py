@@ -1,6 +1,6 @@
 #! /usr/bin/env python3
 
-"""Unga programmerare kodkalender 2020, lucka 16"""
+"""Unga programmerare kodkalender 2020, lucka 16."""
 # https://ungaprogrammerare.se/kodkalender/lucka-16/
 
 from collections import Counter

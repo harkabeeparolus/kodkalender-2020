@@ -1,6 +1,6 @@
 #! /usr/bin/env python3
 
-"""Unga programmerare kodkalender 2020, lucka 3"""
+"""Unga programmerare kodkalender 2020, lucka 3."""
 # https://ungaprogrammerare.se/kodkalender/lucka-3/
 
 import functools
